@@ -1,0 +1,23 @@
+#list{
+    
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 960px;
+
+    li{
+        list-style: none;
+        border: solid 1px #ccc;
+        float: left;
+        padding: 0 20px;
+        width:50%;
+        box-sizing: border-box;
+        text-align: center;
+
+        h2{
+            &:hover{
+                span{display: inline-block;}
+            }
+            span{display: none;}
+        }
+    }
+}

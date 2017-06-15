@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="dist/libs/handlebars-v4.0.5.js"></script>
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <script id="listitem" type="text/x-handlebars-template">
+        <ul>
+    	{{#each person}}
+            <li>
+               <h2>{{this.name}} <span>{{this.joiningDate}}</span></h2> 
+               <h4>{{this.designation}}</h4>
+               <h5>{{this.age}}</h5>
+            </li>
+    	{{/each}}   
+        </ul>
+    </script>
+
+</head>
+<body>
+
+
+    <div id="list">
+    </div>
+
+    <br><br><br>
+    <div><span> Total items: <span class="count"></span></span></div><br>
+    
+    <div>Note: To save your time, I kept adding boxes after 30 seconds :)</div>
+
+
+    <script src="src/js/tasks.js"></script>
+    
+</body>
+</html>
